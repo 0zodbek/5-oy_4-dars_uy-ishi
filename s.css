@@ -19,15 +19,12 @@ position: fixed;
     align-items: center;
     margin-top: 0vw;
 }
-#mainWrapper{
-/* background-image: linear-gradient(to right, red, orange, yellow); */
-/* border: 1px solid green ; */
-}
+
 a{
 text-decoration: none;
 color: black;
 font-weight: 700;
-font-size: 32px;
+font-size: 2vw;
 }
 button{
 width: 10vw;
@@ -36,11 +33,15 @@ border: 1px solid transparent;
 border-radius: 0.4vw;
 font-size: 1vw;
 }
-img{
+#rasm{
 margin-top: 6vw;
 width: 80vw;
 height: 50vw;
 margin-left: 7vw;
+}
+#najot{
+width: 25vw;
+height: 5.5vw;
 }
 .maincontainer{
 padding-left: 15px;

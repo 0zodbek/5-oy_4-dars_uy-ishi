@@ -133,6 +133,7 @@ del.addEventListener('click',function(){
   del.style.backgroundColor = "transparent";
     del.style.border = '1px solid white'
     del.style.color = "white";
+    imgWrapper.style.display = 'none'
     body.style.backgroundColor = 'white'
 })
-
+// headerContainer.style.display = 
