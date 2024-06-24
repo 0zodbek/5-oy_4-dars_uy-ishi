@@ -1,4 +1,5 @@
 let winter = document.getElementById("winter");
+let body = document.querySelector('body')
 // console.log(winter);
 let header = document.querySelector("header");
 // console.log(header);
@@ -10,9 +11,12 @@ let spring = document.getElementById("spring");
 let summer = document.getElementById("summer");
 let autumn = document.getElementById("autumn");
 let mainContainer = document.getElementsByClassName("maincontainer");
-let body = document.getElementsByTagName("body");
 let imgWrapper = document.getElementById("imageWrapper");
-let gap = body.innerHTML;
+let del = document.getElementById('detate')
+let grad = document.getElementById('grad')
+let mainWrapper = document.getElementById('mainWrapper')
+// let gap = body.innerHTML;
+// let imageWrapper = document.getElementsByClassName('img');
 // headerContainer.style.display = 'flex';
 // headerContainer.style = 'SpaceBetween'
 winter.addEventListener("click", function () {
@@ -31,8 +35,13 @@ winter.addEventListener("click", function () {
   summer.style.transition = 'all 1s ease';
   summer.style.color = '#000'
   image.setAttribute("src", "./images/winterImage.jpg");
+  del.style.transition = 'all 1s ease';
+  del.style.color = '#000';
+  del.style.backgroundColor = '#fff';
+  body.style.backgroundColor = 'white'
 });
 spring.addEventListener("click", function () {
+  spring.style.transformTranslate = '0,50px'
     spring.style.transition = 'all 1s ease'
     imgWrapper.style.display = "block";
     spring.style.backgroundColor = "transparent";
@@ -49,6 +58,10 @@ spring.addEventListener("click", function () {
   autumn.style.transition = 'all 1s ease';
   autumn.style.color = '#000';
     image.setAttribute("src", "./images/springImage.jpg");
+    del.style.transition = 'all 1s ease';
+  del.style.color = '#000';
+  del.style.backgroundColor = '#fff';
+  body.style.backgroundColor = 'LightPink'
   });
   summer.addEventListener("click", function () {
     imgWrapper.style.display = "block";
@@ -67,6 +80,10 @@ spring.addEventListener("click", function () {
     autumn.style.backgroundColor = '#fff';
   autumn.style.transition = 'all 1s ease';
   autumn.style.color = '#000';
+  del.style.transition = 'all 1s ease';
+  del.style.color = '#000';
+  del.style.backgroundColor = '#fff';
+  body.style.backgroundColor = 'PaleGoldenrod'
   });
   autumn.addEventListener("click", function(){
     imgWrapper.style.display = "block";
@@ -85,4 +102,37 @@ spring.addEventListener("click", function () {
     summer.style.backgroundColor = '#fff';
   summer.style.transition = 'all 1s ease';
   summer.style.color = '#000';
+  del.style.transition = 'all 1s ease';
+  del.style.color = '#000';
+  del.style.backgroundColor = '#fff';
+  body.style.backgroundColor = 'Peru'
 })
+// rasm.style.width = '80vw';
+// rasm.style.height = '40vw'
+// rasm.style.margin = 'auto'
+// image.style.marginRight = '50%'
+// imageWrapper.style.width = '80vw'
+// imageWrapper.style.height = '40vw'
+// imageWrapper.style.margin = '15px,auto'
+{/* <canvas id="myCanvas"></canvas> */}
+
+del.addEventListener('click',function(){
+  image.setAttribute("src", "./images/bg.png")
+  winter.style.transition = 'all 1s ease';
+  winter.style.color = '#000';
+  winter.style.backgroundColor = '#fff';
+  spring.style.transition = 'all 1s ease';
+  spring.style.color = '#000';
+  spring.style.backgroundColor = '#fff';
+  summer.style.backgroundColor = '#fff';
+  summer.style.transition = 'all 1s ease';
+  summer.style.color = '#000';
+  autumn.style.backgroundColor = '#fff';
+  autumn.style.transition = 'all 1s ease';
+  autumn.style.color = '#000';
+  del.style.backgroundColor = "transparent";
+    del.style.border = '1px solid white'
+    del.style.color = "white";
+    body.style.backgroundColor = 'white'
+})
+
